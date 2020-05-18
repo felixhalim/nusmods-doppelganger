@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { CardList } from "./component/card-list/card-list.component";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      modules: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch("https://api.nusmods.com/v2/2019-2020/moduleList.json")
+      .then((res) => res.json())
+      .then((modules) => this.setState({ modules }));
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>NUSMods Doppelganger</h1>
+        <CardList modules={this.state.modules}></CardList>
+      </div>
+    );
+  }
 }
 
 export default App;
