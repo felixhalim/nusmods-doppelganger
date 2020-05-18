@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nusmods-doppelganger/static/css/main.11e526f6.chunk.css",
+    "main.js": "/nusmods-doppelganger/static/js/main.b01f92e9.chunk.js",
+    "main.js.map": "/nusmods-doppelganger/static/js/main.b01f92e9.chunk.js.map",
+    "runtime-main.js": "/nusmods-doppelganger/static/js/runtime-main.24315925.js",
+    "runtime-main.js.map": "/nusmods-doppelganger/static/js/runtime-main.24315925.js.map",
+    "static/js/2.e26011c9.chunk.js": "/nusmods-doppelganger/static/js/2.e26011c9.chunk.js",
+    "static/js/2.e26011c9.chunk.js.map": "/nusmods-doppelganger/static/js/2.e26011c9.chunk.js.map",
+    "index.html": "/nusmods-doppelganger/index.html",
+    "precache-manifest.ea4d2efa5541e93bb74cdee876438e77.js": "/nusmods-doppelganger/precache-manifest.ea4d2efa5541e93bb74cdee876438e77.js",
+    "service-worker.js": "/nusmods-doppelganger/service-worker.js",
+    "static/css/main.11e526f6.chunk.css.map": "/nusmods-doppelganger/static/css/main.11e526f6.chunk.css.map",
+    "static/js/2.e26011c9.chunk.js.LICENSE.txt": "/nusmods-doppelganger/static/js/2.e26011c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24315925.js",
+    "static/js/2.e26011c9.chunk.js",
+    "static/css/main.11e526f6.chunk.css",
+    "static/js/main.b01f92e9.chunk.js"
+  ]
+}
