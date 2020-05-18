@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { CardList } from "./component/card-list/card-list.component";
+import { SearchBox } from "./component/search-box/search-box.component";
 
 import "./App.css";
 
@@ -8,6 +9,7 @@ class App extends Component {
     super();
     this.state = {
       modules: [],
+      searchField: "",
     };
   }
 
@@ -17,11 +19,26 @@ class App extends Component {
       .then((modules) => this.setState({ modules }));
   }
 
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
+
   render() {
+    const { modules, searchField } = this.state;
+    const filteredModules = modules.filter(
+      (mod) =>
+        mod.title.toLowerCase().includes(searchField.toLowerCase()) ||
+        mod.moduleCode.toLowerCase().includes(searchField.toLowerCase())
+    );
+
     return (
       <div className="App">
         <h1>NUSMods Doppelganger</h1>
-        <CardList modules={this.state.modules}></CardList>
+        <SearchBox
+          placeholder="Type any module here"
+          changeHandler={this.handleChange}
+        ></SearchBox>
+        <CardList modules={filteredModules}></CardList>
       </div>
     );
   }
