@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nusmods-doppelganger/precache-manifest.ea4d2efa5541e93bb74cdee876438e77.js"
+  "/nusmods-doppelganger/precache-manifest.0ef894224b737338fc281f77c74be400.js"
 );
 
 self.addEventListener('message', (event) => {
