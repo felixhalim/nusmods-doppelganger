@@ -40,5 +40,7 @@
 h1 {
   font-family: "Squada One", cursive;
   font-size: 72px;
-  color: salmon;
+  background: linear-gradient(to right, #ffffff 0%, #00ffd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
